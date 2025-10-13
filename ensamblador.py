@@ -44,7 +44,7 @@ while i < len(palabras):
         try:
             registros[palabras[i][1]] = registros[palabras[i][2]]
         except:
-            registros[palabras[i][1]] = int(registros[palabras[i][2]])
+            registros[palabras[i][1]] = int([palabras[i][2]])
         
 
     elif palabras[i][0] == 'call':
@@ -112,8 +112,9 @@ while i < len(palabras):
         break
 
     elif palabras[i][0] == 'ret':
-        if not callStack.isEmpty:
+        if not callStack.isEmpty():
             i = callStack.pop()
+            continue
         else:
             print("Error: callstack vacía")
 
