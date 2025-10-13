@@ -1,4 +1,4 @@
-from ensamblador.Stack import Stack
+from Stack import Stack
 import math
 
 # Abrir fichero
@@ -41,7 +41,11 @@ i = 0  # contador
 
 while i < len(palabras):
     if palabras[i][0] == 'mov':
-        registros[palabras[i][1]] = registros[palabras[i][2]]
+        try:
+            registros[palabras[i][1]] = registros[palabras[i][2]]
+        except:
+            registros[palabras[i][1]] = int(registros[palabras[i][2]])
+        
 
     elif palabras[i][0] == 'call':
         callStack.push(i + 1)  # guardar posición de retorno
