@@ -1,0 +1,3 @@
+tag inicio
+mov $t1 $t2
+jmp inicio
