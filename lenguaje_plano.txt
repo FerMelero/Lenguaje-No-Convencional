@@ -1,3 +1,39 @@
-tag inicio
-mov $t1 $t2
-jmp inicio
+mov $t2, 6
+mov $t3, $t10
+
+sum $t4, $t4, 1
+sum $t5, $t5, $t5
+
+sub $t6, $t6, 1
+sub $t7, $t7, $t7
+
+mul $t8, $t8, 2
+mul $t9, $t9, $t4
+
+div $t7, $t5, 5
+div $t9, $t9, $t6
+
+pow $t4, $t4, 2
+pow $t3, $t2, $t7
+
+slt $t9, $t3, 35
+slt $t10, $t3, 37
+
+sgt $t9, $t3, 35
+sgt $t10, $t3, 37
+
+jmp skip
+svc2 $t2
+tag skip
+
+jeq $t9, 1, true_tag
+svc2 $t2
+tag true_tag
+svc2 $t3
+
+jne $t10, 1, false_tag
+svc2 $t3
+tag false_tag
+svc2 $t2
+
+svc1
