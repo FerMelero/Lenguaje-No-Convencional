@@ -1,4 +1,3 @@
-"# Mi Proyecto" 
 ## Instrucciones:
 
 * **jmp** → salto incondicional -
