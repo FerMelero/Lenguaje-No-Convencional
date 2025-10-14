@@ -17,7 +17,7 @@
 ㅤ  ↓ Registros para los tréboles (del 2 al 10)<br>
 <strong>aux 2 3 4 5 6 7 8 9 10 </strong>                   
 ↑↓ Registros auxiliares <br>
-**result** (otra variable auxiliar para cuando llamemos a una función guardar el valor de retorno) 
+**result** <!--(otra variable auxiliar para cuando llamemos a una función guardar el valor de retorno) -->
 
 
 ## Arquitectura:
