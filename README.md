@@ -1,13 +1,12 @@
 ## Instrucciones:
 
-* **jmp** → salto incondicional -
-* **jeq** / **jne** (jump if equal) / (jump if not equal) -
-* **slt** (set lower than) "<"
-* **sgt** (set greater than) ">"
-* **svc** —> svc1 (salir) svc2 (print) (Llamadas al sistema (service call))
-* **mov** (mover valor de un lado a otro)-
-* **sys** (lo mismo que svc)
-* **tag** (etiqueta - no es una instrucción, con él nuestro ensamblador sabrá en dónde estará una función)
+* **jmp** → salto incondicional (jmp skip)
+* **tag** (etiqueta - no es una instrucción, con él nuestro ensamblador sabrá en dónde estará una función) (tag skip)
+* **jeq** / **jne** (jump if equal) / (jump if not equal) (jeq $t9, 1, true_tag) (tiene que estar definida la etiqueta)
+* **slt** (set lower than) "<" (slt $t9, $t3, 35)
+* **sgt** (set greater than) ">" (sgt $t9, $t3, 35)
+* **svc** —> svc1 (salir) svc2 (print) (Llamadas al sistema (service call)) (svc2 $t2)
+* **mov** (mover valor de un lado a otro) (mov $t3, $t10)
 
 
 
