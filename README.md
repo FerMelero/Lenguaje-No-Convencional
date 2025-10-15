@@ -12,10 +12,10 @@
 
 ## Registros:
 
-ㅤ  ↓ Registros para los tréboles (del 2 al 10)<br>
-<strong>aux 2 3 4 5 6 7 8 9 10 </strong>                   
+ㅤㅤㅤ  ↓ Registros para los tréboles (del 2 al 10)<br>
+<strong>$aux $t2 $t3 $t4 $t5 $t6 $t7 $t8 $t9 $t10 </strong>                   
 ↑↓ Registros auxiliares <br>
-**result** <!--(otra variable auxiliar para cuando llamemos a una función guardar el valor de retorno) -->
+**$res** <!--(otra variable auxiliar para cuando llamemos a una función guardar el valor de retorno) -->
 
 
 ## Arquitectura:
